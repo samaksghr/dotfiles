@@ -1,3 +1,5 @@
 export TIGRESS_VERSION=3.1
 export TIGRESS_HOME=/usr/local/bin/tigress/$TIGRESS_VERSION
 export PATH=$PATH:$TIGRESS_HOME
+
+export SSH_AUTH_SOCK=~/.1password/agent.sock
