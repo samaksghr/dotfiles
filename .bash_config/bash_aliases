@@ -1,0 +1,4 @@
+alias cl="clear"
+alias rl="source ~/.bashrc & clear"
+alias bcat="batcat -pp"
+alias dgit="git --git-dir=$HOME/.dotfiles --work-tree=$HOME $@"

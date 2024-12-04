@@ -101,8 +101,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -d ~/.bash_config ]; then
+	for f in ~/.bash_config/*; do source $f; done
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -115,4 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-[ -r /home/localdev/.byobu/prompt ] && . /home/localdev/.byobu/prompt   #byobu-prompt#
