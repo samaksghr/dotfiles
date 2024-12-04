@@ -19,6 +19,15 @@ SSH_AUTH_SOCK=~/.1password/agent.sock ssh-add -l
 256 SHA256: ... Name (ED25519)
 ...
 ```
+You should also modify your ~/.ssg/config:
+```bash
+Host github.com
+	Hostname ssh.github.com
+	port 443
+	User git
+	IdentityFile /dev/null
+	IdentityAgent ~/.1password/agent.sock
+```
 ## Installation
 ```bash
 git clone --bare git@github.com:samaksghr/dotfiles.git $HOME/.dotfiles
