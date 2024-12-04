@@ -8,7 +8,7 @@ Make sure to install 1Password. Check https://support.1password.com/install-linu
 Then add the following config in ``~/.config/1Password/ssh/agent.toml ``.
 ```bash
 [[ssh-keys]]
-item = "Name"
+item = "name"
 vault = "Personal"
 ```
 Test if ssh-agent can list your keys :
